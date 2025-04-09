@@ -22,5 +22,5 @@ def count_file_in_dir(path=Path.cwd(), recurse=True) -> dict:
 
 path_to_file = Path('/data')
 
-print(Path.home())
+
 print(Path.cwd().parent)
