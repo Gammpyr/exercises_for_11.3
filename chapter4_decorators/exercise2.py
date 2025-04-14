@@ -8,7 +8,7 @@ accept_dict = {
 def accept_control_decorator(func):
     def wrapper(*args, **kwargs):
         role = args[-1]
-        str_func = str(func).split()[1]
+        str_func = func.__name__
         if role not in accept_dict:
             return 'В доступе отказано!'
         if str_func in accept_dict[role] or 'all' in accept_dict[role]:
