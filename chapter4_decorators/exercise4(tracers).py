@@ -1,3 +1,6 @@
+"""Задача 4.
+Напишите декоратор, который выводит промежуточные результаты выполнения функции для отладки."""
+
 import sys
 def debug_intermediate_results(func):
     def wrapper(*args, **kwargs):
